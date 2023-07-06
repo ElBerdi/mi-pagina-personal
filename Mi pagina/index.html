@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Fc retro</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="imagenes\logo.jpg" alt="">
+        </a>
+
+        <h1>Fc Retro</h1>
+        <div class="usuario">
+        <a href="usuario.html">
+                <img src="imagenes\icono-usuario.jpg" alt="">
+                <span>Usuario<span>
+        </a>
+        </div>
+        <div class="carrito">
+            <a href="carrito.html">
+                <img src="imagenes\carrito.jpg" alt="">
+                 <span>Carrito</span>
+        </a>
+        </div>
+  -
+        <div class="buscador">
+            <input type="search" id="busca" placeholder="¿Qué producto busca?">
+        </div>
+    </header>
+
+
+    <div id="carrusel">
+        <img src="imagenes-remeras\imagen1.jpg" alt="">
+        <img src="imagenes-remeras\imagen2.jpg" alt="">
+        <img src="imagenes-remeras\imagen3.jpg" alt="">
+        <img src="imagenes-remeras\imagen4.jpg" alt="">
+        <img src="imagenes-remeras\imagen1 - copia.jpg" alt="">
+        <img src="imagenes-remeras\imagen2 - copia.jpg" alt="">
+        <img src="imagenes-remeras\imagen3 - copia.jpg" alt="">
+        <img src="imagenes-remeras\imagen4 - copia.jpg" alt="">
+        <img src="imagenes-remeras\imagen1 - copia (2).jpg" alt="">
+        <img src="imagenes-remeras\imagen2 - copia (2).jpg" alt="">
+        <img src="imagenes-remeras\imagen3 - copia (2).jpg" alt="">
+        <img src="imagenes-remeras\imagen4 - copia (2).jpg" alt="">
+    </div>
+    <input id="btn-carr-der" type="button" value="<">
+    <input id="btn-carr-izq" type="button" value=">">
+    
+
+    <script>
+        const btnCarrIzq = document.getElementById("btn-carr-izq");
+        const btnCarrDer = document.getElementById("btn-carr-der");
+        const carrusel = document.getElementById("carrusel");
+
+        let valorRigth = 0;
+        let valorLeft = 0;
+        carrusel.style.left = "0px";
+
+        btnCarrIzq.addEventListener("click", function () {
+            valorRigth = valorRigth - 200;
+            carrusel.style.left = valorRigth.toString() + "px";
+            if (valorRigth>2400)
+            {
+                valorRigth=0;
+            }
+        }); // closure
+
+        btnCarrDer.addEventListener("click", function () {
+            valorRigth = valorRigth + 200;
+            carrusel.style.left = valorRigth.toString() + "px";
+        }); // closure
+
+
+
+    </script>
+
+
+
+    <!--div class="imagenes-productos">
+        <div>
+            <img src="imagenes-remeras\imagen1.jpg" alt="" width="">
+            <h2>
+                Año - Club/Selección - Modelo
+            </h2>
+        </div>
+        <div>
+            <img src="imagenes-remeras\imagen2.jpg" alt="" width="">
+            <h2>
+                Año - Club/Selección - Modelo
+            </h2>
+        </div>
+        <div>
+            <img src="imagenes-remeras\imagen3.jpg" alt="" width="">
+            <h2>
+                Año - Club/Selección - Modelo
+            </h2>
+        </div>
+        <div>
+            <img src="imagenes-remeras\imagen4.jpg" alt="" width="">
+            <h2>
+                Año - Club/Selección - Modelo
+            </h2>
+        </div>
+    </div-->
+    </main>
+
+
+
+
+    <h2 class="tit"><span>Productos</span>
+        <div class="line"></div>
+    </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <nav class="imagenes-redes">
+            <h3>Redes Sociales:</h3>
+            <ol>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5491168702880"><img src="imagenes\Wpp.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><img src="imagenes\Instragram.jpg" alt=""></a>
+                </li>
+            </ol>
+        </nav>
+
+        <ol>
+            <li>
+                <a href="">Centro de usuario</a>
+            </li>
+            <li>
+                <a href="">Envio/Metodos de pago</a>
+            </li>
+            <li>
+                <a href="">Información</a>
+            </li>
+            <li>
+                <a href="">Ayuda</a>
+            </li>
+            <ol>
+    </footer>
+
+</body>
+
+</html>

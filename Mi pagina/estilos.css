@@ -1,0 +1,114 @@
+* {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    margin: 0%;
+}
+
+header {
+    display: flex;
+    background-color: orange;
+    font-style: normal;
+    position: sticky;
+    top: 0;
+    min-height: 100px;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1 {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+header a span{
+    display: flex;
+    flex-direction: column;
+}
+header img {
+    width: 50px;
+    margin-right: 10px;
+}
+.icono
+{   
+  
+padding-left: 50px;
+   
+}
+.buscador
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+}
+
+footer {
+    display: flex;
+    height: 15%;
+    width: 100%;
+    background-color: orange;
+    position: fixed;
+    bottom: 0%;
+}
+
+footer img {
+    max-width: 40px;
+}
+
+footer ol {
+    display: flex;
+    column-gap: 10px;
+    list-style-type: none;
+    padding: 0%;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.imagenes-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrusel {
+    width: 2400px;
+    position: relative;
+    transition: left 0.5s ease-in-out;
+}
+
+#carrusel img {
+    width: 200px;
+    height: 200px;
+    margin-left: -5px;
+}
+
+#btn-carr-der{
+
+ display: flex;
+ justify-content: end;
+ align-items: flex-end;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover
+{
+    color: blanchedalmond;
+}
+
+@media (max-width:700px)
+{
+    body{
+        flex-direction: column;
+    }
+}
